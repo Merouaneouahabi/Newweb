@@ -64,8 +64,7 @@ th, td {
     font-size: 0.9em;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
-    /* Fixed width removed so that the columns adjust automatically */
+    white-space: nowrap; /* Normal on larger screens */
 }
 
 /* Header Specific Styling */
@@ -89,9 +88,22 @@ td:hover {
     background-color: #f0f0f0;
 }
 
-/* Responsive Adjustments */
+/* Responsive Adjustments for Tablets */
 @media (max-width: 768px) {
     th, td {
+        padding: 6px;
+        font-size: 0.8em;
+    }
+}
+
+/* Additional Responsive Adjustments for Phones */
+@media (max-width: 480px) {
+    table {
+        table-layout: fixed; /* Force fixed layout on very small screens */
+    }
+    th, td {
+        white-space: normal; /* Allow text to wrap */
+        word-break: break-word; /* Break long words if needed */
         padding: 6px;
         font-size: 0.8em;
     }
