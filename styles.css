@@ -51,7 +51,7 @@ p {
 table {
     width: 100%;
     border-collapse: collapse;
-    table-layout: fixed; /* Fixed column width */
+    table-layout: auto; /* Allow columns to auto-adjust based on content */
     margin-top: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
@@ -65,7 +65,7 @@ th, td {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 350px; /* Set column width to 350px */
+    /* Fixed width removed so that the columns adjust automatically */
 }
 
 /* Header Specific Styling */
