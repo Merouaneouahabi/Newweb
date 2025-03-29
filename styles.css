@@ -1,4 +1,4 @@
-/* General Reset */
+/* General Reset */ 
 * {
     margin: 0;
     padding: 0;
@@ -65,7 +65,7 @@ th, td {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 350mm; /* Set column width to 350mm */
+    width: 350px; /* Set column width to 350px */
 }
 
 /* Header Specific Styling */
