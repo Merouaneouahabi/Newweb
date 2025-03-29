@@ -65,7 +65,7 @@ th, td {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 70px; /* Adjust column width */
+    width: 100px; /* Increased column width */
 }
 
 /* Header Specific Styling */
